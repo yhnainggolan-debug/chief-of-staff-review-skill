@@ -203,29 +203,6 @@ If multiple OpenClaw bots or machines need the same skill, the sync script matte
 
 In other words, GitHub becomes the source of truth, and the script makes local installation boring and consistent.
 
-## Dedicated repo vs existing workspace repo
-
-### Dedicated repo
-A dedicated repo means this skill lives in its own public GitHub repository.
-
-Why this is better for this use case:
-- easier for other people to understand
-- easier to share with your boss or other bots
-- cleaner version history
-- no unrelated personal workspace files mixed in
-- easier to make public safely
-
-### Existing workspace repo
-This means keeping the skill inside your current OpenClaw workspace repo.
-
-Why that is worse for this use case:
-- the repo contains unrelated personal assistant files
-- harder for outsiders to know what matters
-- making the full workspace public would be messy and risky
-- updating another bot becomes less clean
-
-For this use case, a dedicated public repo is the right move.
-
 ## Repository structure
 
 ```text
