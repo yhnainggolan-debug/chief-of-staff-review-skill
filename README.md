@@ -20,10 +20,14 @@ The skill reviews materials through these lenses:
 - risk framing
 - board readiness
 - abnormal numbers and unjustified assumptions
+- relevant headlines from the last 7 days that may materially change the decision
 
 It also includes sector lenses for:
 - solar power and renewables
 - M&A
+- mining
+- logistics
+- financial services
 - B2B enterprise software
 
 ## Best trigger phrases
@@ -50,6 +54,7 @@ The skill is designed to produce:
 - red flags
 - recommended next step
 - optional rewrite of the decision memo spine
+- relevant recent headlines that strengthen, weaken, or complicate the case
 
 ## Quick start for humans
 

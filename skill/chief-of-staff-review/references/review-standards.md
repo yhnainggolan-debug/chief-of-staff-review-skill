@@ -308,6 +308,69 @@ Questions to ask:
 - Which diligence finding could most change price or structure?
 - What breaks first in integration?
 
+### Mining
+Look for:
+- reserve, resource, grade, stripping, recovery, and throughput assumptions tied to operational reality
+- commodity price assumptions separated clearly from operating performance assumptions
+- mine plan, infrastructure, permitting, contractor, and logistics constraints made explicit
+- capex, sustaining capex, haul distance, fuel, labor, maintenance, and royalty assumptions shown clearly
+- downside cases for grade variability, weather, geotechnical issues, permitting, contractor performance, and commodity price weakness
+
+Red flags:
+- project economics that only work on optimistic commodity prices
+- production ramps with no equipment, contractor, or infrastructure bridge
+- all-in costs that look too clean or too low for the site reality
+- reserve confidence and mine-life claims presented with more certainty than geology supports
+- no discussion of permitting, community, ESG, or export/logistics bottlenecks
+
+Questions to ask:
+- How much of the value here is geology versus execution versus commodity price?
+- What assumption is doing the most work in project NPV or IRR?
+- What breaks first if prices soften or ramp-up slips?
+- Which operational bottleneck is most likely in the first 12 months?
+
+### Logistics
+Look for:
+- route density, utilization, fill rate, dwell time, turnaround time, and network design logic
+- clear unit economics by shipment, trip, warehouse, lane, or customer segment
+- service-level assumptions matched to labor, fleet, warehousing, and systems capacity
+- fuel, maintenance, labor, claims, and working-capital effects represented honestly
+- downside cases for volume volatility, customer concentration, disruption, and service failure
+
+Red flags:
+- revenue growth without utilization or route-density improvement logic
+- margin targets that ignore fuel, labor, claims, empty miles, or warehouse inefficiency
+- network expansion assumptions with no ramp, no local ops burden, and no service degradation risk
+- customer concentration or key-lane dependency buried in the appendix
+- software/platform narrative used to hide a hard operational business
+
+Questions to ask:
+- Which operational KPI actually drives margin here?
+- What utilization level is assumed and how realistic is it?
+- What happens if volume arrives but route density does not?
+- Where do service failures or claims spike first in the plan?
+
+### Financial services
+Look for:
+- clear economics by product, cohort, customer segment, or distribution channel
+- explicit regulatory, compliance, underwriting, fraud, capital, or liquidity assumptions
+- revenue growth tied to acquisition, conversion, retention, pricing, balance sheet, or cross-sell mechanics
+- credit, claims, cost of funds, reserve, or capital consumption reflected honestly where relevant
+- downside cases for regulation, defaults, fraud, market shocks, liquidity, and reputational risk
+
+Red flags:
+- growth assumptions detached from risk, compliance, funding, or capital constraints
+- margin claims that ignore loss rates, reserves, cost of funds, or servicing cost
+- customer growth that outruns underwriting, operations, or compliance capability
+- “platform” or “ecosystem” claims that obscure weak unit economics
+- no treatment of concentration, conduct risk, or regulatory dependency
+
+Questions to ask:
+- What regulatory or capital constraint matters most here?
+- What happens if defaults, fraud, or claims normalize above plan?
+- Which economics are real before marketing support and accounting presentation?
+- What part of the model is most sensitive to trust, funding, or compliance failure?
+
 ### B2B enterprise software
 Look for:
 - clear ICP, buying motion, implementation burden, and expansion path
@@ -330,7 +393,27 @@ Questions to ask:
 - What implementation or integration friction slows scale?
 - If hiring slows, what happens to growth next year?
 
-## 10. Scoring Rubric
+## 10. Recent Headlines Check
+When the review topic is tied to a sector, geography, company, commodity, regulation, customer type, or strategic theme that could be affected by current events, search the web for important headlines from the last 7 days.
+
+Use this check to pressure-test whether the document is already stale or missing a live risk/opportunity.
+
+Look for headlines about:
+- commodity price moves
+- regulation or policy changes
+- M&A activity or competitor moves
+- financing conditions, rates, or liquidity shifts
+- major accidents, outages, sanctions, or legal issues
+- customer demand shifts or procurement changes
+- technology/platform changes that alter assumptions
+
+Rules:
+- include only items that materially affect the review
+- prefer a few relevant headlines over a noisy list
+- connect each headline back to the deck's assumptions or timing
+- if nothing important is found, say that clearly instead of forcing it
+
+## 11. Scoring Rubric
 Use these scores when the skill output includes scoring.
 
 ### 9 to 10
@@ -353,7 +436,7 @@ When scoring:
 - a polished deck with weak economics should still score badly
 - if evidence quality is poor, confidence level should usually be low
 
-## 11. In-the-Room Question Style
+## 12. In-the-Room Question Style
 Questions asked live should:
 - be short enough to deliver in one breath
 - force specificity
@@ -371,7 +454,7 @@ Good examples:
 - Who owns this on day one?
 - What would make us regret approving this today?
 
-## 12. Decision Memo Rewrite Rule
+## 13. Decision Memo Rewrite Rule
 If the material is directionally sensible but poorly argued, rewrite the decision spine rather than merely criticizing formatting.
 
 The rewrite should clarify:
@@ -381,7 +464,7 @@ The rewrite should clarify:
 - the main risks and what would mitigate them
 - what evidence is still missing before approval
 
-## 13. Review Tone
+## 14. Review Tone
 - Be direct.
 - Be skeptical without becoming theatrical.
 - Do not praise polish over substance.

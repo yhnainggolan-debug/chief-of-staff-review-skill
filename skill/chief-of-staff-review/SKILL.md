@@ -1,6 +1,6 @@
 ---
 name: chief-of-staff-review
-description: Review decks, proposals, investment notes, business cases, strategy memos, board materials, and decision documents. Use when the user asks to review a deck or proposal, pressure-test a recommendation, identify what is missing for decision making, find red flags, surface what deserves executive attention, generate clarifying questions, or judge whether material is decision-ready. Especially useful for finance, strategy, transformation, operating plans, board-facing documents, solar power and renewables projects, M&A materials, and B2B enterprise software proposals or plans.
+description: Review decks, proposals, investment notes, business cases, strategy memos, board materials, and decision documents. Use when the user asks to review a deck or proposal, pressure-test a recommendation, identify what is missing for decision making, find red flags, surface what deserves executive attention, generate clarifying questions, or judge whether material is decision-ready. Especially useful for finance, strategy, transformation, operating plans, board-facing documents, solar power and renewables projects, M&A materials, mining, logistics, financial services, and B2B enterprise software proposals or plans.
 ---
 
 # Chief Of Staff Review
@@ -15,6 +15,8 @@ Review decision materials like a sharp chief of staff, not a summarizer. Diagnos
 4. Prioritize only the gaps that could change the decision, not cosmetic issues.
 5. Flag abnormal financial patterns, unsupported projections, strategic hand-waving, execution risk, and unanswered downside.
 6. Produce executive-grade follow-up questions.
+7. Search the web for important headlines from the last week that directly relate to the main topic, market, sector, geography, commodity, regulation, or counterparties discussed in the material.
+8. Use those headlines only when they materially affect timing, risk, assumptions, or relevance.
 
 ## Review Standards
 Read `references/review-standards.md` before doing the review. Use it as the default lens for:
@@ -23,7 +25,7 @@ Read `references/review-standards.md` before doing the review. Use it as the def
 - finance and abnormal-number checks
 - board/investment memo pressure testing
 - red flags and question prompts
-- sector-specific checks for solar power, renewables, M&A, and B2B enterprise software
+- sector-specific checks for solar power, renewables, M&A, mining, logistics, financial services, and B2B enterprise software
 
 ## Simple Triggers
 Treat requests like these as automatic triggers for this skill:
@@ -102,7 +104,15 @@ Write the sharpest clarifying questions. Group under:
 ### 7. Questions I’d ask in the room
 Write the short, high-pressure questions the user could ask live in a management, board, IC, or deal room setting. Make them punchy, direct, and hard to dodge.
 
-### 8. Red flags
+### 8. Relevant headlines from the last 7 days
+Use web search to find recent important headlines directly related to the main topic in the material. Keep this section short and only include items that could materially change the judgment.
+For each relevant item:
+- give the headline theme in one line
+- say why it matters to this decision
+- say whether it strengthens, weakens, or complicates the case
+If nothing meaningful turns up, say so plainly.
+
+### 9. Red flags
 List specific red flags, not generic advice. Examples:
 - unsupported claims
 - vanity metrics
@@ -114,7 +124,7 @@ List specific red flags, not generic advice. Examples:
 - hidden dependency
 - recommendation does not match evidence
 
-### 9. Recommended next step
+### 10. Recommended next step
 End with one of these:
 - approve
 - reject
@@ -122,7 +132,7 @@ End with one of these:
 - request revised deck / memo
 Then state exactly what evidence or revision is needed next.
 
-### 10. Optional rewrite mode
+### 11. Optional rewrite mode
 If the material is directionally right but badly presented, offer a short section called `How I would rewrite the decision memo` with:
 - the real ask
 - the 3 supporting arguments that matter
