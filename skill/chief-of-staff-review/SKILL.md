@@ -1,223 +1,71 @@
 ---
 name: chief-of-staff-review
-description: Review decks, proposals, investment notes, business cases, strategy memos, board materials, and decision documents. Use when the user asks to review a deck or proposal, pressure-test a recommendation, identify what is missing for decision making, find red flags, surface what deserves executive attention, generate clarifying questions, or judge whether material is decision-ready. Especially useful for finance, strategy, transformation, operating plans, board-facing documents, solar power and renewables projects, M&A materials, mining, logistics, financial services, and B2B enterprise software proposals or plans.
+description: Review executive decision materials and presentations with two-axis readiness, audience simulation, evidence pressure-testing, and actionable revisions.
 ---
 
-# Chief Of Staff Review
+# Chief of Staff Review
 
-## Overview
-Review decision materials like a sharp chief of staff, not a summarizer. Diagnose whether the material is decision-useful, what is missing, where the logic is weak, which numbers look abnormal, and what the user should press on next.
+Judge both the artifact and the decision behind it. Separate what is persuasive from what is proven, simulate the intended audience, and focus on the few issues that could change the outcome.
 
-## Review Workflow
-1. Identify the actual decision being requested.
-2. Separate facts, assumptions, recommendations, and storytelling.
-3. Judge whether the material is decision-ready.
-4. Prioritize only the gaps that could change the decision, not cosmetic issues.
-5. Flag abnormal financial patterns, unsupported projections, strategic hand-waving, execution risk, and unanswered downside.
-6. Produce executive-grade follow-up questions.
-7. Search the web for important headlines from the last week that directly relate to the main topic, market, sector, geography, commodity, regulation, or counterparties discussed in the material.
-8. Use those headlines only when they materially affect timing, risk, assumptions, or relevance.
+## Workflow
 
-## Review Standards
-Read `references/review-standards.md` before doing the review. Use it as the default lens for:
-- decision quality
-- strategy and execution realism
-- finance and abnormal-number checks
-- board/investment memo pressure testing
-- red flags and question prompts
-- sector-specific checks for solar power, renewables, M&A, mining, logistics, financial services, and B2B enterprise software
+1. Inspect the complete artifact before judging it. Identify its format, intended audience, stage, decision or purpose, and requested mode.
+2. Read `references/core-review.md` for every review.
+3. Load only the relevant additional references:
+   - Deck, demo, reveal, web experience, or presentation: `references/presentation-room-read.md`
+   - Material economics, valuation, returns, capital, forecasts, or funding: `references/financial-review.md`
+   - Sector-specific material: the closest file under `references/sectors/`
+   - Non-default output or revision request: `references/output-modes.md`
+4. Map important statements as fact, assumption, management claim, recommendation, or aspiration. Do not silently promote one category into another.
+5. Judge two separate dimensions when both apply:
+   - **Artifact readiness:** Does the material perform its intended communication role?
+   - **Decision sufficiency:** Is there enough evidence, ownership, and risk treatment to act?
+6. Prioritize only material issues: those that could change the decision, economics, credibility, execution, governance, or audience reaction.
+7. Anchor observations to the best locator available: page, slide, beat, scene, section, exhibit, tab and row, timestamp, or quoted phrase.
+8. Use live external research only when current conditions could materially affect timing, economics, risk, regulation, counterparties, or market assumptions. State clearly what external evidence changes.
+9. Review requests are read-only. Edit, rewrite, or update files only when the user asks. For revisions, update the canonical source before downstream visuals or exports unless instructed otherwise. Never send material externally without explicit approval.
 
-## Simple Triggers
-Treat requests like these as automatic triggers for this skill:
-- review this deck
-- pressure-test this proposal
-- what am I missing here?
-- what should I ask?
-- is this decision-ready?
-- rip this apart
-- board-ready or not?
-- what deserves my attention?
-- what looks abnormal in these numbers?
-- review this like my chief of staff
-- chief of staff review
-- cos review
-- cos review deep
-- cos:
+## Stage classification
 
-If the user drops a file without much instruction, default to this skill when the file looks like a deck, memo, proposal, investment note, business case, or board material. A plain `review this` with an attached deck should usually route here too.
+Calibrate the burden of proof to the material's stage:
 
-## Mode Selection
-Use these modes:
-- `cos review` or equivalent short triggers: use the short boardroom version
-- `cos review deep`: use the full structured version
-- if the user explicitly asks for a deep dive, full memo, or detailed analysis, use the full structured version even without the exact phrase
-- otherwise default to the short boardroom version
+- **Exploration:** test coherence, strategic logic, and learning agenda.
+- **Working draft:** expose gaps and establish the decision spine.
+- **Management alignment:** test ownership, trade-offs, and internal consistency.
+- **Board discussion:** make implications, choices, and key uncertainties explicit.
+- **Approval request:** require decision-grade evidence, economics, downside, governance, and a precise ask.
 
-## Citation Rule
-Anchor every substantive point to the deck.
-- cite the primary page for each major finding, question, risk, or decision using `(p. X)`
-- if a point clearly depends on more than one page, use `(p. X-Y)` or `(p. X, Y)`
-- do not fake precision, if page mapping is unclear from the extracted content, say `(page unclear in extract)`
-- in short mode, citations are mandatory on every bullet except the final call
-- in deep mode, citations are mandatory on every substantive bullet where the deck supports the point
+Do not reject an exploratory concept for lacking approval-grade detail. Do not excuse an approval paper because it is polished.
 
-## Output Format
-Use one of these two formats depending on mode.
+## Audience simulation
 
-### Short mode, default for `cos review`
-Keep it sharp. Use short bullets. Do not exceed:
-- Why: 3 bullets
-- What matters most: 3 bullets
-- Decisions my boss needs to make: 3 bullets
-- Questions I'd ask: 3 bullets
-- Relevant headlines: 2 bullets only when material
+When an audience is named or strongly implied, review from that seat. Ask:
 
-Structure the response in this order:
+- What lands in the first five seconds?
+- What question forms immediately?
+- What feels credible, inflated, confusing, or politically sensitive?
+- What would make this audience lean forward, disengage, or refuse?
+- What evidence or decision framing would change that reaction?
 
-#### 1. Verdict
-- State whether the material is decision-ready, almost ready, or not ready.
-- State the core judgment in 1 to 2 sentences.
+Useful personas include Chairman, board director, investment committee, regulator, BU CEO, investor, lender, partner, and customer.
 
-#### 2. Why
-- Give the 2 to 3 strongest reasons only.
-- Every bullet must include a page citation.
+## Default output
 
-#### 3. What matters most
-- List the top 3 issues that most deserve executive attention.
-- Every bullet must include a page citation.
+Keep the default response boardroom-short:
 
-#### 4. Decisions my boss needs to make
-- State the concrete decisions prompted by the deck.
-- If the deck is mainly informational, say `No key decisions prompted.`
-- Every bullet must include a page citation unless there is truly no decision prompt.
+1. **Verdict** — no more than two sentences; distinguish artifact readiness from decision sufficiency when relevant.
+2. **What changes the outcome** — up to three ranked bullets with evidence anchors.
+3. **Questions I would ask** — up to three questions that could alter the call.
+4. **Call / next move** — one direct line.
 
-#### 5. Questions I'd ask
-- Write the top 3 live questions for the room.
-- Every bullet must include a page citation.
+Use deep, room-read, rewrite-spine, redline, source-first, or question-pack mode only when requested or clearly necessary. Follow `references/output-modes.md`.
 
-#### 6. Relevant headlines from the last 7 days
-- Include only if current events materially change the judgment.
-- Max 2 bullets.
-- No filler.
+## Review standard
 
-#### 7. Call
-End with one of these:
-- approve
-- reject
-- defer pending answers
-- request revised deck / memo
-Then state the exact next move in 1 to 2 lines.
-
-### Deep mode, for `cos review deep`
-Always structure the response in this order.
-
-#### 1. Bottom line
-- State whether the material is decision-ready, almost ready, or not ready.
-- State the core judgment in 1 to 3 sentences.
-
-#### 2. Scores
-Score each from 10 with one-line justification:
-- Decision clarity
-- Evidence quality
-- Financial quality
-- Execution realism
-- Risk framing
-- Board readiness
-Then give:
-- Overall score / 10
-- Confidence level: high, medium, or low
-
-#### 3. What deserves your attention
-- List the 3 to 5 issues that most deserve the user's time.
-- Prioritize issues that could change the decision, economics, risk, timeline, or credibility.
-- Every bullet must include a page citation.
-
-#### 4. Decisions prompted by the deck
-- State the concrete decisions prompted by the material.
-- If none, say `No key decisions prompted.`
-- Cite the relevant page for each decision prompt.
-
-#### 5. What is missing
-Group missing items under the most relevant headings:
-- Decision clarity
-- Market / commercial evidence
-- Financial evidence
-- Operating plan / execution
-- Risk / downside / sensitivity
-- Governance / ownership / timeline
-- Every substantive bullet must include a page citation where the gap is visible from the deck.
-
-#### 6. Abnormal numbers check
-Call out any financial patterns that look abnormal, weak, or unjustified. Examples:
-- revenue, volume, margin, or valuation projections that are unusually steep
-- top-line growth without matching strategy, capacity, sales motion, or capex logic
-- negative bottom line without a credible path or intentional investment case
-- costs growing too fast relative to top line or productivity gains
-- capex, opex, headcount, working capital, churn, CAC, payback, burn, or leverage trends that do not make sense
-- flat costs or flat risk assumptions in a business that should show step-ups
-- round numbers, abrupt inflections, or model outputs with no operational bridge
-For every abnormal pattern, say whether it is:
-- plausible but unsupported
-- internally inconsistent
-- strategically aggressive
-- financially dangerous
-- likely wrong or incomplete
-- Every bullet must include a page citation.
-
-#### 7. Questions to ask
-Write the sharpest clarifying questions. Group under:
-- Strategy
-- Financials
-- Execution
-- Risk / downside
-- Decision / governance
-- Every bullet must include a page citation.
-
-#### 8. Questions I’d ask in the room
-Write the short, high-pressure questions the user could ask live in a management, board, IC, or deal room setting. Make them punchy, direct, and hard to dodge.
-- Every bullet must include a page citation.
-
-#### 9. Relevant headlines from the last 7 days
-Use web search to find recent important headlines directly related to the main topic in the material. Keep this section short and only include items that could materially change the judgment.
-For each relevant item:
-- give the headline theme in one line
-- say why it matters to this decision
-- say whether it strengthens, weakens, or complicates the case
-If nothing meaningful turns up, say so plainly.
-
-#### 10. Red flags
-List specific red flags, not generic advice. Examples:
-- unsupported claims
-- vanity metrics
-- selective comparables
-- no downside case
-- no tradeoffs
-- no owner
-- no timing
-- hidden dependency
-- recommendation does not match evidence
-- Every bullet must include a page citation.
-
-#### 11. Recommended next step
-End with one of these:
-- approve
-- reject
-- defer pending answers
-- request revised deck / memo
-Then state exactly what evidence or revision is needed next.
-
-#### 12. Optional rewrite mode
-If the material is directionally right but badly presented, offer a short section called `How I would rewrite the decision memo` with:
-- the real ask
-- the 3 supporting arguments that matter
-- the evidence still needed
-- the cleaner decision framing
-
-## Tone and behavior
-- Do not open with a long summary.
-- Diagnose first, summarize only when useful.
-- Be direct when the material is weak.
-- Distinguish critical issues from optional improvements.
-- Prefer concise bullets over essay mode.
-- If the document is strong, say why without becoming soft.
-- If data is missing, do not pretend confidence.
+- Be direct, specific, and proportional to the decision.
+- Preserve real strengths; do not manufacture criticism for balance.
+- Distinguish missing evidence from a proven flaw.
+- Quantify where the source permits it; never invent precision.
+- Treat claim discipline, audience trust, and political feasibility as substantive—not cosmetic.
+- Avoid generic consultant language, exhaustive checklists, and repeated points.
+- End with a clear call: proceed, revise, defer, reject, or continue development.
